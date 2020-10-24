@@ -1,7 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
-
+//calls function from generateMarkdown.js
 // array of questions for user
 const questions = [
 {
@@ -26,13 +26,13 @@ const questions = [
 },
 {
     type:"list",
-    message:"license",
+    message:"license?",
     name:"licence",
     choices:[
-        "1",
-        "2",
-        "3",
-        "4",
+        "BSD 3",
+        "APACHE 2.0",
+        "GVL-GPL",
+        "MIT",
         "None"
     ]
 },
@@ -48,7 +48,12 @@ const questions = [
 },
 {
     type:"input",
-    message:"Any questions?",
+    message:"Your Github username is?",
+    name:"username"
+},
+{
+    type:"input",
+    message:"Contact information?",
     name:"question"
 }
 ];

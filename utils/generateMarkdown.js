@@ -2,10 +2,10 @@
 function generateMarkdown(data) {
   return `
   
-  #${data.title}
+  # ${data.title}
   
   ## Table of contents
-  [describe](#description)
+  [describe]
   [install]
   [usage]
   [license]
@@ -13,10 +13,10 @@ function generateMarkdown(data) {
   [test]
   [question]
 
-  ##Description 
+  ## Description 
   ${data.describe}
 
-  ##Installation
+  ## Installation
   ${data.install}
 
   ## Usage information
@@ -25,13 +25,13 @@ function generateMarkdown(data) {
   ## Lisense used
   ${data.license}
   
-  ##Contributer
+  ## Contributer
   ${data.contributer}
 
-  ##Test
+  ## Test
   ${data.test}
 
-  ##Questions
+  ## Questions
   ${data.question}
 
   Github:[${data.username}](https://github.com/Callumwhite210)
